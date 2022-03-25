@@ -1,0 +1,18 @@
+.header-container {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.header-container p {
+    margin: 0;
+}
+
+.header-title {
+    font-size: 55px;
+    color: blueviolet;
+}
+
+.header-small-title {
+    font-size: 30px;
+}
