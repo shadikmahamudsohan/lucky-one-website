@@ -5,10 +5,13 @@ const SingleCard = ({ data }) => {
     console.log(data);
     const { name, image, price } = data;
     return (
-        <div>
-            <h1>{name}</h1>
-            <img src={image} alt="watch-img" />
-            <h2>Price: ${price}</h2>
+        <div className='card'>
+            <img src={image} className='watch-img' alt="watch-img" />
+            <div className='card-info'>
+                <h1 className='card-name'>{name}</h1>
+                <h2>Price: ${price}</h2>
+            </div>
+            <button className='add-to-cart-btn'>ADD TO CART</button>
         </div>
     );
 };

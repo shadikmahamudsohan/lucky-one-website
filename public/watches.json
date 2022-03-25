@@ -31,13 +31,13 @@
     },
     {
         "id": 6,
-        "name": "Cool & back Watch",
+        "name": "Cool back Watch",
         "image": "https://images.unsplash.com/photo-1511370235399-1802cae1d32f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzR8fHdyaXN0JTIwd2F0Y2h8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
         "price": 550
     },
     {
         "id": 7,
-        "name": "Smooth & black Watch",
+        "name": "Smooth black Watch",
         "image": "https://images.unsplash.com/photo-1507679622673-989605832e3d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzd8fHdyaXN0JTIwd2F0Y2h8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
         "price": 400
     },

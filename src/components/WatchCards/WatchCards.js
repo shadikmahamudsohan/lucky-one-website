@@ -14,13 +14,17 @@ const WatchCards = () => {
 
     return (
         <div>
-            <h2>Cards</h2>
             <div className='cards-container'>
-                {
-                    watches.map(watch => (
-                        <SingleCard key={watch.id} data={watch} />
-                    ))
-                }
+                <div className='cards'>
+                    {
+                        watches.map(watch => (
+                            <SingleCard key={watch.id} data={watch} />
+                        ))
+                    }
+                </div>
+                <div className='selected-card'>
+                    <h2>Selected Watches</h2>
+                </div>
             </div>
         </div>
     );
