@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
+import SingleCard from '../SingleCard/SingleCard';
+import './WatchCards.css';
 
-const DisplayCards = () => {
+const WatchCards = () => {
 
     const [watches, setWatches] = useState([]);
     useEffect(() => {
@@ -13,10 +15,10 @@ const DisplayCards = () => {
     return (
         <div>
             <h2>Cards</h2>
-            <div>
+            <div className='cards-container'>
                 {
                     watches.map(watch => (
-                        <p>{watch.name}</p>
+                        <SingleCard key={watch.id} data={watch} />
                     ))
                 }
             </div>
@@ -24,4 +26,4 @@ const DisplayCards = () => {
     );
 };
 
-export default DisplayCards;
+export default WatchCards;

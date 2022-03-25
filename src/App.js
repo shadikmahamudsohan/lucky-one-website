@@ -1,12 +1,12 @@
 import './App.css';
-import DisplayCards from './components/DisplayCards/DisplayCards';
 import Header from './components/Header/Header';
+import WatchCards from './components/WatchCards/WatchCards';
 
 function App() {
   return (
     <div>
       <Header />
-      <DisplayCards />
+      <WatchCards />
     </div>
   );
 }
