@@ -1,8 +1,7 @@
 import React from 'react';
 import './SingleCard.css';
 
-const SingleCard = ({ data }) => {
-    console.log(data);
+const SingleCard = ({ data, handleAddToCart }) => {
     const { name, image, price } = data;
     return (
         <div className='card'>
@@ -11,7 +10,7 @@ const SingleCard = ({ data }) => {
                 <h1 className='card-name'>{name}</h1>
                 <h2>Price: ${price}</h2>
             </div>
-            <button className='add-to-cart-btn'>ADD TO CART</button>
+            <button onClick={() => handleAddToCart(data)} className='add-to-cart-btn'>ADD TO CART</button>
         </div>
     );
 };
