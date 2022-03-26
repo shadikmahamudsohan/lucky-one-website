@@ -1,6 +1,6 @@
 import React from 'react';
 import './SingleCard.css';
-import { AiOutlineShoppingCart } from 'react-icons/ai';
+import { MdOutlineAddShoppingCart } from 'react-icons/md';
 
 const SingleCard = ({ data, handleAddToCart }) => {
     const { name, image, price } = data;
@@ -13,7 +13,7 @@ const SingleCard = ({ data, handleAddToCart }) => {
             </div>
             <div className='card-btn'>
                 <button onClick={() => handleAddToCart(data)} className='add-to-cart-btn'>ADD TO CART</button>
-                <AiOutlineShoppingCart size={23} color={'#0011ff'} />
+                <MdOutlineAddShoppingCart size={23} color={'#0011ff'} />
             </div>
         </div>
     );
