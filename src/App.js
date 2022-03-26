@@ -1,5 +1,6 @@
 import './App.css';
 import Header from './components/Header/Header';
+import Questions from './components/Questions/Questions';
 import WatchCards from './components/WatchCards/WatchCards';
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div>
       <Header />
       <WatchCards />
+      <Questions />
     </div>
   );
 }
