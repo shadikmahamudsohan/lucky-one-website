@@ -30,7 +30,14 @@
     color: #0011ff;
     background-color: transparent;
     cursor: pointer;
+    font-size: 17px;
 }
+
+.card-btn {
+    display: flex;
+    align-items: center;
+}
+
 
 .card-info {
     padding: 10px;

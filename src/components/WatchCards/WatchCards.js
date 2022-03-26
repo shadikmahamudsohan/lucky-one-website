@@ -47,6 +47,10 @@ const WatchCards = () => {
                             <Cart key={cart.id} cartInfo={cart} />
                         ))
                     }
+                    <div className="cart-btn">
+                        <button className='chooseForMe-btn'>CHOOSE FOR ME</button>
+                        <button className='chooseAgain-btn'>CHOOSE AGAIN</button>
+                    </div>
                 </div>
             </div>
         </div>

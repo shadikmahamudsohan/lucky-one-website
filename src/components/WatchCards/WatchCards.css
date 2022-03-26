@@ -15,13 +15,47 @@
 .selected-card {
     box-shadow: 0 15px 20px gray;
     background-color: #cfcfcf;
-    height: 400px;
+    height: 520px;
     border-radius: 20px 0 0 20px;
     padding: 20px;
 }
 
+/* cart */
+.cart-btn button {
+    padding: 15px 50px;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    background-color: transparent;
+    font-weight: bold;
+    transition: 200ms;
+}
+
+.chooseForMe-btn {
+    border: 2px solid green;
+    color: green;
+}
+
+.chooseForMe-btn:hover {
+    background-color: rgba(0, 128, 0, 0.726);
+    color: white;
+}
+
+.chooseAgain-btn {
+    border: 2px solid purple;
+    color: purple
+}
+
+.chooseAgain-btn:hover {
+    background-color: rgba(128, 0, 128, 0.726);
+    color: white;
+}
+
+
 @media all and (max-width: 992px) {
 
+    /* cards */
     .cards {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -44,5 +78,6 @@
     .selected-card {
         order: 1;
         margin: 50px;
+        height: 85vh;
     }
 }

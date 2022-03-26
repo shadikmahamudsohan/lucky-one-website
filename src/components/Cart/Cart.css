@@ -1,0 +1,21 @@
+.cart-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.item-img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+}
+
+.delete-btn {
+    transition: 100ms;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    color: red;
+}
