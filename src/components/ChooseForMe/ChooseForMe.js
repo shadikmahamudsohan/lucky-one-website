@@ -1,4 +1,5 @@
 import React from 'react';
+import './ChooseForMe.css';
 import Modal from 'react-modal';
 import { GrClose } from 'react-icons/gr';
 
@@ -16,7 +17,9 @@ const customStyles = {
 Modal.setAppElement('#root');
 
 
-const ChooseForMe = ({ cards, chooseForMe, modalIsOpen, openModal, closeModal, randomCard }) => {
+const ChooseForMe = ({ cards, chooseForMe, modalIsOpen, openModal, closeModal, randomCard = {} }) => {
+
+    const { name = "Cart is empty", image } = randomCard;
     return (
         <div>
             <div>
@@ -34,7 +37,10 @@ const ChooseForMe = ({ cards, chooseForMe, modalIsOpen, openModal, closeModal, r
                         <GrClose className='icon' />
                     </div>
                     <div className='modal-container'>
-                        <h1>{randomCard ? randomCard.name : 'Please select something'}</h1>
+                        <div className="cart-info">
+                            <img className="item-img item-modal-img" src={image} alt="watch img" />
+                            <h2 className="item-name">{name}</h2>
+                        </div>
                     </div>
                 </Modal>
             </div>
