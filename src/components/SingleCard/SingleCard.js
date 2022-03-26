@@ -11,9 +11,11 @@ const SingleCard = ({ data, handleAddToCart }) => {
                 <h1 className='card-name'>{name}</h1>
                 <h2>Price: ${price}</h2>
             </div>
-            <div className='card-btn'>
-                <button onClick={() => handleAddToCart(data)} className='add-to-cart-btn'>ADD TO CART</button>
-                <MdOutlineAddShoppingCart size={23} color={'#0011ff'} />
+            <div>
+                <button onClick={() => handleAddToCart(data)} className='add-to-cart-btn'>
+                    <p>ADD TO CART </p>
+                    <MdOutlineAddShoppingCart className='icon' size={27} />
+                </button>
             </div>
         </div>
     );

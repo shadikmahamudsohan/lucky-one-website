@@ -24,7 +24,7 @@ const ChooseForMe = ({ cards, chooseForMe, modalIsOpen, openModal, closeModal, r
         <div>
             <div>
                 <div onClick={openModal} className='cart-counter'>
-                    <button onClick={() => chooseForMe(cards)} className='chooseForMe-btn'>CHOOSE FOR ME</button>
+                    <button onClick={() => chooseForMe(cards)} className='chooseForMe-btn'>CHOOSE 1 FOR ME</button>
                 </div>
 
                 <Modal

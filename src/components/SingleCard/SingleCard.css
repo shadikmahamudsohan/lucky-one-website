@@ -25,19 +25,30 @@
 
 /* card button */
 .add-to-cart-btn {
-    padding: 10px;
+    padding: 5px 10px;
+    margin-left: 5px;
     border: none;
-    color: #0011ff;
+    border-radius: 5px;
+    color: #0066ff;
     background-color: transparent;
     cursor: pointer;
     font-size: 17px;
-}
-
-.card-btn {
     display: flex;
     align-items: center;
+    transition: 100ms;
 }
 
+.icon {
+    margin-left: 10px;
+}
+
+.add-to-cart-btn:hover {
+    background-color: rgba(0, 102, 255, 0.096);
+}
+
+.add-to-cart-btn:active {
+    background-color: rgba(0, 102, 255, 0.226);
+}
 
 .card-info {
     padding: 10px;
