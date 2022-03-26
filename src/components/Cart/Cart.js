@@ -4,7 +4,7 @@ import { AiOutlineDelete } from 'react-icons/ai';
 
 
 const Cart = ({ cartInfo }) => {
-    const { id, name, image } = cartInfo;
+    const { name, image } = cartInfo;
     return (
         <div className='cart'>
             <div className="cart-info">
